@@ -69,3 +69,4 @@ HAVING na_sklade > 0;
 SELECT * FROM kniha WHERE kniha.id_autora = (SELECT autor.id FROM autor WHERE autor.meno = 'William');
 
 /*č.14 */
+SELECT * FROM kosik WHERE kosik.faktura = (SELECT faktura.id FROM faktura WHERE faktura.id = '2');
