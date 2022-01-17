@@ -66,5 +66,6 @@ GROUP BY na_sklade
 HAVING na_sklade > 0;
 
 /*č.13 */
+SELECT * FROM kniha WHERE kniha.id_autora = (SELECT autor.id FROM autor WHERE autor.meno = 'William');
 
 /*č.14 */
